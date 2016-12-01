@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/transparent_border_box"
+            android:orientation="vertical"
+            android:paddingLeft="13dp"
+            android:paddingRight="13dp"
+            android:paddingTop="5dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="3dp"
+                android:text="Milestone II- All Civil Work Except Electrical Allied Civil Work (10-13 Months)"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#347B8F" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="3" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="2.4"
+                    android:paddingRight="7dp"
+                    android:text="@string/stage5_label"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#333333" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_brickwork"
+                    android:layout_width="0dp"
+                    android:layout_height="33dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="0.6"
+                    android:gravity="center" >
+
+                    <CheckBox
+                        android:id="@+id/chkbx_stageV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/chkbx_btn_selector"
+                        android:gravity="center" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="3" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="2.4"
+                    android:text="@string/stage6_label"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#333333" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_plastering"
+                    android:layout_width="0dp"
+                    android:layout_height="33dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="0.6"
+                    android:gravity="center" >
+
+                    <CheckBox
+                        android:id="@+id/chkbx_stageVI"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/chkbx_btn_selector"
+                        android:gravity="center" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="7dp"
+                android:weightSum="3" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="2.4"
+                    android:text="@string/stage7_label"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#333333" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_civil_work"
+                    android:layout_width="0dp"
+                    android:layout_height="33dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="0.6"
+                    android:gravity="center" >
+
+                    <CheckBox
+                        android:id="@+id/chkbx_stageVII"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/chkbx_btn_selector"
+                        android:gravity="center" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

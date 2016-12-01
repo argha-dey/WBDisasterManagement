@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_login"
+    android:orientation="vertical"
+    android:weightSum="15" >
+
+    <ScrollView
+        android:id="@+id/sv_body"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="14" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="10" >
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:id="@+id/ll_mainBody"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="8"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:weightSum="10" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/wb_disaster_logo" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="Disaster Management"
+                    android:textAllCaps="true"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:gravity="center_horizontal"
+                    android:text="Government of West Bengal"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#ffffff"
+                    android:textSize="5pt" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:paddingLeft="21dp"
+                    android:paddingRight="21dp"
+                    android:weightSum="10" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="44dp"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:weightSum="1" >
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_username" />
+
+                            <EditText
+                                android:id="@+id/et_userName"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/ic_input"
+                                android:hint="User Name"
+                                android:inputType="textPostalAddress"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="5dp"
+                                android:singleLine="true"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textColor="#ffffff"
+                                android:textColorHint="#dddddd" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/login_rightbox" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="13dp"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:weightSum="1" >
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_password" />
+
+                            <EditText
+                                android:id="@+id/et_password"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/ic_input"
+                                android:hint="Password"
+                                android:inputType="textPassword"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="5dp"
+                                android:singleLine="true"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textColor="#ffffff"
+                                android:textColorHint="#dddddd" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/login_rightbox" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="13dp"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:onClick="onForgotPassword"
+                            android:orientation="horizontal"
+                            android:weightSum="1" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Forgot password?"
+                                android:textColor="#377AFF"
+                                android:textSize="6pt" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btn_signIn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="13dp"
+                        android:background="@drawable/orange_btn_selector"
+                        android:gravity="center"
+                        android:onClick="onSignInClicked"
+                        android:padding="10dp"
+                        android:shadowColor="#dd000000"
+                        android:shadowDx="2"
+                        android:shadowDy="2"
+                        android:text="SIGN IN"
+                        android:textColor="#ffffff" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingLeft="7dp"
+                        android:paddingRight="7dp" >
+
+                        <CheckBox
+                            android:id="@+id/chkbx_rememberMe"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="left"
+                            android:button="@drawable/chkbx_selector_form"
+                            android:padding="5dp"
+                            android:text="Remember Me"
+                            android:textColor="#dddddd"
+                            android:textSize="14sp" />
+
+                        <LinearLayout
+                            android:id="@+id/ll_signUpHolder"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="center_vertical|right"
+                            android:onClick="onSignUpClicked"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Sign up"
+                                android:textColor="#f3c71d"
+                                android:textSize="7pt" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/rl_footer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_splashText"
+            android:layout_centerInParent="true"
+            android:gravity="bottom"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Powered by "
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#606c8a" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cyber-SWIFT   "
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#606c8a" />
+
+            <TextView
+                android:id="@+id/tv_version"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Version-1.2 "
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#606c8a"
+                android:visibility="gone" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

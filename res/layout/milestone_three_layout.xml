@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/transparent_border_box"
+            android:orientation="vertical"
+            android:paddingLeft="13dp"
+            android:paddingRight="13dp"
+            android:paddingTop="5dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="3dp"
+                android:text="Milestone III- Electrical &amp; Allied Remaining Work (14- 18 Months)"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#347B8F" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="3" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="2.4"
+                    android:text="@string/stage8_label"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#333333" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_sanitory_work"
+                    android:layout_width="0dp"
+                    android:layout_height="33dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="0.6"
+                    android:gravity="center" >
+
+                    <CheckBox
+                        android:id="@+id/chkbx_stageVIII"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/chkbx_btn_selector"
+                        android:gravity="center" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="3" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="2.4"
+                    android:text="@string/stage9_label"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#333333" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_electrical_work"
+                    android:layout_width="0dp"
+                    android:layout_height="33dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="0.6"
+                    android:gravity="center" >
+
+                    <CheckBox
+                        android:id="@+id/chkbx_stageIX"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/chkbx_btn_selector"
+                        android:gravity="center" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="3" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="2.4"
+                    android:text="@string/stage10_label"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#333333" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_remaining"
+                    android:layout_width="0dp"
+                    android:layout_height="33dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="0.6"
+                    android:gravity="center" >
+
+                    <CheckBox
+                        android:id="@+id/chkbx_stageX"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/chkbx_btn_selector"
+                        android:gravity="center" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,637 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/transparent_border_box"
+            android:orientation="vertical"
+            android:paddingBottom="8dp"
+            android:paddingLeft="13dp"
+            android:paddingRight="13dp"
+            android:paddingTop="13dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="1"
+                    android:text="Saftey Measures"
+                    android:textColor="#347B8F" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="2" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Protective Helmets"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#333333"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:id="@+id/rg_protective_helmets_amps_shoes"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|right"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/rb_protective_helmets_amps_shoes_complete"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="7dp"
+                        android:button="@drawable/chkbx_btn_selector"
+                        android:paddingLeft="4dp"
+                        android:text="Yes"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#333333"
+                        android:textDirection="rtl"
+                        android:textSize="5pt" />
+
+                    <RadioButton
+                        android:id="@+id/rb_protective_helmets_amps_shoes_incomplete"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="13dp"
+                        android:button="@drawable/chkbx_btn_selector"
+                        android:paddingLeft="4dp"
+                        android:text="No"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#333333"
+                        android:textDirection="rtl"
+                        android:textSize="5pt" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="2" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Barricading of site"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#333333"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:id="@+id/rg_barricadingOfSite"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|right"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/rb__barricadingOfSite_yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="7dp"
+                        android:button="@drawable/chkbx_btn_selector"
+                        android:paddingLeft="4dp"
+                        android:text="Yes"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#333333"
+                        android:textDirection="rtl"
+                        android:textSize="5pt" />
+
+                    <RadioButton
+                        android:id="@+id/rb__barricadingOfSite_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="13dp"
+                        android:button="@drawable/chkbx_btn_selector"
+                        android:paddingLeft="4dp"
+                        android:text="No"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#333333"
+                        android:textDirection="rtl"
+                        android:textSize="5pt" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="2" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Electrical Wiring to be dressed"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#333333"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:id="@+id/rg_electric_wiring"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|right"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/rb_electric_wiring_yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="7dp"
+                        android:button="@drawable/chkbx_btn_selector"
+                        android:paddingLeft="4dp"
+                        android:text="Yes"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#333333"
+                        android:textDirection="rtl"
+                        android:textSize="5pt" />
+
+                    <RadioButton
+                        android:id="@+id/rb_electric_wiring_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="13dp"
+                        android:button="@drawable/chkbx_btn_selector"
+                        android:paddingLeft="4dp"
+                        android:text="No"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#333333"
+                        android:textDirection="rtl"
+                        android:textSize="5pt" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="2" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Shoes for Workers"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#333333"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:id="@+id/rg_hatShoes"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|right"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/rb_hatShoes_yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="7dp"
+                        android:button="@drawable/chkbx_btn_selector"
+                        android:paddingLeft="4dp"
+                        android:text="Yes"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#333333"
+                        android:textDirection="rtl"
+                        android:textSize="5pt" />
+
+                    <RadioButton
+                        android:id="@+id/rb_hatShoes_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="13dp"
+                        android:button="@drawable/chkbx_btn_selector"
+                        android:paddingLeft="4dp"
+                        android:text="No"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#333333"
+                        android:textDirection="rtl"
+                        android:textSize="5pt" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="2" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Fire Safety Devices"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#333333"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:id="@+id/rg_fireSafetyDevices"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|right"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/rb__fireSafetyDevices_yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="7dp"
+                        android:button="@drawable/chkbx_btn_selector"
+                        android:paddingLeft="4dp"
+                        android:text="Yes"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#333333"
+                        android:textDirection="rtl"
+                        android:textSize="5pt" />
+
+                    <RadioButton
+                        android:id="@+id/rb__fireSafetyDevices_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="13dp"
+                        android:button="@drawable/chkbx_btn_selector"
+                        android:paddingLeft="4dp"
+                        android:text="No"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#333333"
+                        android:textDirection="rtl"
+                        android:textSize="5pt" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="right"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="1"
+                    android:text="Labour Welfare"
+                    android:textColor="#347B8F" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="2" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Labour Camp Structure Satisfactory"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#333333"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:id="@+id/rg_labourCampStructureSatisfactory"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|right"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/rb_labourCampStructureSatisfactory_yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="7dp"
+                        android:button="@drawable/chkbx_btn_selector"
+                        android:paddingLeft="4dp"
+                        android:text="Yes"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#333333"
+                        android:textDirection="rtl"
+                        android:textSize="5pt" />
+
+                    <RadioButton
+                        android:id="@+id/rb_labourCampStructureSatisfactory_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="13dp"
+                        android:button="@drawable/chkbx_btn_selector"
+                        android:paddingLeft="4dp"
+                        android:text="No"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#333333"
+                        android:textDirection="rtl"
+                        android:textSize="5pt" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="2" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="LPG for Labour"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#333333"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:id="@+id/rg_lpg"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|right"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/rb_lpg_yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="7dp"
+                        android:button="@drawable/chkbx_btn_selector"
+                        android:paddingLeft="4dp"
+                        android:text="Yes"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#333333"
+                        android:textDirection="rtl"
+                        android:textSize="5pt" />
+
+                    <RadioButton
+                        android:id="@+id/rb_lpg_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="13dp"
+                        android:button="@drawable/chkbx_btn_selector"
+                        android:paddingLeft="4dp"
+                        android:text="No"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#333333"
+                        android:textDirection="rtl"
+                        android:textSize="5pt" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="2" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Seperate Toilets for workers"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#333333"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:id="@+id/rg_seperateToilet"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|right"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/rb_seperateToilet_yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="7dp"
+                        android:button="@drawable/chkbx_btn_selector"
+                        android:paddingLeft="4dp"
+                        android:text="Yes"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#333333"
+                        android:textDirection="rtl"
+                        android:textSize="5pt" />
+
+                    <RadioButton
+                        android:id="@+id/rb_seperateToilet_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="13dp"
+                        android:button="@drawable/chkbx_btn_selector"
+                        android:paddingLeft="4dp"
+                        android:text="No"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#333333"
+                        android:textDirection="rtl"
+                        android:textSize="5pt" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="2" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Drinking Water for workers"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#333333"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:id="@+id/rg_drinkingWater"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|right"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/rb_drinkingWater_yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="7dp"
+                        android:button="@drawable/chkbx_btn_selector"
+                        android:paddingLeft="4dp"
+                        android:text="Yes"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#333333"
+                        android:textDirection="rtl"
+                        android:textSize="5pt" />
+
+                    <RadioButton
+                        android:id="@+id/rb_drinkingWater_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="13dp"
+                        android:button="@drawable/chkbx_btn_selector"
+                        android:paddingLeft="4dp"
+                        android:text="No"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#333333"
+                        android:textDirection="rtl"
+                        android:textSize="5pt" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="right"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="1"
+                    android:text="Display"
+                    android:textColor="#347B8F" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7dp"
+                android:layout_marginTop="7dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="2" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="MPCS Information Board"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#333333"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:id="@+id/rg_mpcs_info_board"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|right"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/rb_mpcs_info_board_yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="8dp"
+                        android:button="@drawable/chkbx_btn_selector"
+                        android:paddingLeft="4dp"
+                        android:text="Yes"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#333333"
+                        android:textDirection="rtl"
+                        android:textSize="5pt" />
+
+                    <RadioButton
+                        android:id="@+id/rb_mpcs_info_board_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="13dp"
+                        android:button="@drawable/chkbx_btn_selector"
+                        android:paddingLeft="4dp"
+                        android:text="No"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#333333"
+                        android:textDirection="rtl"
+                        android:textSize="5pt" />
+                </RadioGroup>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13dp"
+            android:background="#FEFEFF"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:text="@string/emp_esmf_title"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#347B8F" />
+    </RelativeLayout>
+
+</LinearLayout>

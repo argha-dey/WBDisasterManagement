@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainmenu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:foreground="@drawable/popup_dim_shape" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/option_menu_bg"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:background="@drawable/options_menu_inside_bg"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btn_reload"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/options_menu_button_bg"
+                android:gravity="center"
+                android:text="Reload"
+                android:textAppearance="?android:attr/textAppearance"
+                android:textColor="#333333" />
+
+            <Button
+                android:id="@+id/btn_sync"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#6D6D6D"
+                android:gravity="center"
+                android:text="Sync"
+                android:textAppearance="?android:attr/textAppearance"
+                android:textColor="#f5f5f5" />
+
+            <Button
+                android:id="@+id/btn_feedback"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/options_menu_button_bg"
+                android:gravity="center"
+                android:text="Feedback"
+                android:textAppearance="?android:attr/textAppearance"
+                android:textColor="#333333" />
+
+            <Button
+                android:id="@+id/btn_change_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/options_menu_button_bg"
+                android:gravity="center"
+                android:text="Change Password"
+                android:textAppearance="?android:attr/textAppearance"
+                android:textColor="#333333" />
+
+            <Button
+                android:id="@+id/btn_options"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7dp"
+                android:background="@drawable/logout_btn_selector"
+                android:gravity="center"
+                android:text="Logout"
+                android:textAppearance="?android:attr/textAppearance"
+                android:textColor="#f5f5f5" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</FrameLayout>

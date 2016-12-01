@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="7dp"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_projectName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="13dp"
+        android:padding="5dp"
+        android:text="1. Faridpur Primary School ..."
+        android:textColor="#333333" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2" >
+
+        <ProgressBar
+            android:id="@+id/linear_progress_bar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="5dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1.7"
+            android:max="100"
+            android:progress="1"
+            android:progressDrawable="@drawable/linear_progress_bar_drawable" />
+
+        <ImageButton
+            android:id="@+id/ib_syncdata"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_weight="0.3"
+            android:background="@android:color/transparent"
+            android:scaleType="centerInside"
+            android:src="@drawable/sync_btn_selector" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginRight="11dp"
+        android:layout_marginTop="7dp"
+        android:background="#B4B4B4" />
+
+</LinearLayout>

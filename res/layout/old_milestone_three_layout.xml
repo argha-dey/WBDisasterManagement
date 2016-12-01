@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical" >
+
+  <!--   <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/transparent_border_box"
+            android:orientation="vertical"
+            android:paddingLeft="13dp"
+            android:paddingRight="13dp"
+            android:paddingTop="5dp" >
+
+            <LinearLayout
+                android:id="@+id/ll_lengend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="3dp"
+                android:weightSum="3" >
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="33dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.4" >
+
+                    <TextView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/orange_background_box"
+                        android:gravity="center"
+                        android:inputType="numberDecimal"
+                        android:maxLength="20"
+                        android:paddingLeft="3dp"
+                        android:singleLine="true"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#333333"
+                        android:textColorHint="#347B8F" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:text="F.Y Avg"
+                    android:textColor="#347B8F"
+                    android:textSize="5pt" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="33dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.4" >
+
+                    <TextView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/yellow_background_box"
+                        android:gravity="center"
+                        android:inputType="numberDecimal"
+                        android:maxLength="20"
+                        android:padding="3dp"
+                        android:singleLine="true"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#333333"
+                        android:textColorHint="#347B8F" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:text="P.H.Y Avg"
+                    android:textColor="#347B8F"
+                    android:textSize="5pt" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="33dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.4" >
+
+                    <EditText
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/darkblue_border_box"
+                        android:gravity="center"
+                        android:imeOptions="actionDone"
+                        android:inputType="phone"
+                        android:maxLength="20"
+                        android:paddingLeft="3dp"
+                        android:singleLine="true"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#333333"
+                        android:textColorHint="#347B8F" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:text="P.H.Y Avg I/P"
+                    android:textColor="#347B8F"
+                    android:textSize="5pt" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="3dp"
+                android:text="Milestone III- Electrical &amp; Allied Remaining Work (14- 18 Months)"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#347B8F" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="3" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1.8"
+                    android:text="Stage IX - Upto Plinth Level (0-2%):"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#333333" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="33dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="0.4" >
+
+                    <TextView
+                        android:id="@+id/tv_StageIXActualVal"
+                        android:layout_width="match_parent"
+                        android:layout_height="33dp"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/orange_background_box"
+                        android:gravity="center"
+                        android:inputType="numberDecimal"
+                        android:maxLength="20"
+                        android:paddingLeft="3dp"
+                        android:paddingRight="3dp"
+                        android:singleLine="true"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#333333"
+                        android:textColorHint="#347B8F" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="33dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="0.4" >
+
+                    <TextView
+                        android:id="@+id/tv_StageIXPrevVal"
+                        android:layout_width="match_parent"
+                        android:layout_height="33dp"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/yellow_background_box"
+                        android:gravity="center"
+                        android:inputType="numberDecimal"
+                        android:maxLength="20"
+                        android:paddingLeft="3dp"
+                        android:paddingRight="3dp"
+                        android:singleLine="true"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#333333"
+                        android:textColorHint="#347B8F" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="33dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="0.4" >
+
+                    <EditText
+                        android:id="@+id/etStageIX"
+                        android:layout_width="match_parent"
+                        android:layout_height="33dp"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/darkblue_border_box"
+                        android:gravity="center"
+                        android:inputType="phone"
+                        android:maxLength="20"
+                        android:paddingLeft="3dp"
+                        android:paddingRight="3dp"
+                        android:singleLine="true"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#333333"
+                        android:textColorHint="#347B8F" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:paddingRight="2dp"
+                        android:text="*"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#C90000"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="3" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1.8"
+                    android:text="Stage X: Plinth Level to 2nd Floor (0-17%)"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#333333" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="33dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="0.4" >
+
+                    <TextView
+                        android:id="@+id/tv_StageXActualVal"
+                        android:layout_width="match_parent"
+                        android:layout_height="33dp"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/orange_background_box"
+                        android:gravity="center"
+                        android:inputType="numberDecimal"
+                        android:maxLength="20"
+                        android:paddingLeft="3dp"
+                        android:paddingRight="3dp"
+                        android:singleLine="true"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#333333"
+                        android:textColorHint="#347B8F" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="33dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="0.4" >
+
+                    <TextView
+                        android:id="@+id/tv_StageXPrevVal"
+                        android:layout_width="match_parent"
+                        android:layout_height="33dp"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/yellow_background_box"
+                        android:gravity="center"
+                        android:inputType="numberDecimal"
+                        android:maxLength="20"
+                        android:paddingLeft="3dp"
+                        android:paddingRight="3dp"
+                        android:singleLine="true"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#333333"
+                        android:textColorHint="#347B8F" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="0.4" >
+
+                    <EditText
+                        android:id="@+id/etStageX"
+                        android:layout_width="match_parent"
+                        android:layout_height="33dp"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/darkblue_border_box"
+                        android:gravity="center"
+                        android:inputType="phone"
+                        android:maxLength="20"
+                        android:paddingLeft="3dp"
+                        android:paddingRight="3dp"
+                        android:singleLine="true"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#333333"
+                        android:textColorHint="#347B8F" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:paddingRight="2dp"
+                        android:text="*"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#C90000"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="3" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1.8"
+                    android:text="Stage XI: Cement Concrete Road (0-1%)"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#333333" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="33dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="0.4" >
+
+                    <TextView
+                        android:id="@+id/tv_StageXIActualVal"
+                        android:layout_width="match_parent"
+                        android:layout_height="33dp"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/orange_background_box"
+                        android:gravity="center"
+                        android:inputType="numberDecimal"
+                        android:maxLength="20"
+                        android:paddingLeft="3dp"
+                        android:paddingRight="3dp"
+                        android:singleLine="true"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#333333"
+                        android:textColorHint="#347B8F" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="33dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="0.4" >
+
+                    <TextView
+                        android:id="@+id/tv_StageXIPrevVal"
+                        android:layout_width="match_parent"
+                        android:layout_height="33dp"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/yellow_background_box"
+                        android:gravity="center"
+                        android:inputType="numberDecimal"
+                        android:maxLength="20"
+                        android:paddingLeft="3dp"
+                        android:paddingRight="3dp"
+                        android:singleLine="true"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#333333"
+                        android:textColorHint="#347B8F" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="33dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="0.4" >
+
+                    <EditText
+                        android:id="@+id/etStageXI"
+                        android:layout_width="match_parent"
+                        android:layout_height="33dp"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/darkblue_border_box"
+                        android:gravity="center"
+                        android:imeOptions="actionDone"
+                        android:inputType="phone"
+                        android:maxLength="20"
+                        android:paddingLeft="3dp"
+                        android:paddingRight="3dp"
+                        android:singleLine="true"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#333333"
+                        android:textColorHint="#347B8F" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:paddingRight="2dp"
+                        android:text="*"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#C90000"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>-->
+
+</LinearLayout> 

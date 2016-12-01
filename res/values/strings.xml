@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">WBDisasterManagement</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="no_internet">No network connection found! Please check your network connection.</string>
+    <string name="response_timeout">Response time out error! Please check your internet connection and try again.</string>
+    <string name="auth_failure">Server authentication failed! Please try again.</string>
+    <string name="server_error">Server isn\'t responding! Please try again.</string>
+    <string name="network_error">Network not found! Please check your internet connection and try again.</string>
+    <string name="parse_error">Unable to parse Data! Please try again.</string>
+    <string name="offline_storage">Network connection is weak!\nData has been saved in offline mode.\nPlease use "SYNC" button to upload the data when network connection is available.</string>
+
+    <string-array name="milestones">
+        <item>Milestone I</item>
+        <item>Milestone II</item>
+        <item>Milestone III</item>
+    </string-array>
+
+    <string name="emp_esmf_title">EMP &amp; ESMF</string>
+    <string name="hard_barricade"><b>Hard Barricade</b></string>
+    <!--
+    <string name="stage1_label"><b>Stage I</b> - Upto Existing Ground Level (0-25%)</string>
+    <string name="stage2_label"><b>Stage II</b> - From Ground Level to Pinth Level (0-15%)</string>
+    <string name="stage3_label"><b>Stage III</b> - From Pinth Level to 1st Floor (0-10%)</string>
+    <string name="stage4_label"><b>Stage IV</b> - From 1st Floor to 2nd Floor (0-10%)</string>
+    <string name="stage5_label"><b>Stage V</b> - From 2nd Floor to 3rd Floor (0-5%)</string>
+    <string name="stage6_label"><b>Stage VI</b> - Plinth Level to 1st Floor Level (0-7%)</string>
+    <string name="stage7_label"><b>Stage VII</b> - 1st Floor to 2nd Floor (0-6%)</string>
+    <string name="stage8_label"><b>Stage VIII</b> - From 2nd Floor to 3rd Floor (0-2%)</string>
+    <string name="stage9_label"><b>Stage IX</b> - Upto Plinth Level (0-2%)</string>
+    <string name="stage10_label"><b>Stage X</b> - Plinth Level to 2nd Floor (0-17%)</string>
+    <string name="stage11_label"><b>Stage XI</b> - Cement Concrete Road (0-1%)</string>
+    -->
+    <string name="stage1_label">50% of Foundation work completed</string>
+    <string name="stage2_label">Foundation work completed</string>
+    <string name="stage3_label">1st Floor column structure and slab completed</string>
+    <string name="stage4_label">2nd Floor column structure and slab completed</string>
+    <string name="stage5_label">Brickwork completed</string>
+    <string name="stage6_label">Plastering completed</string>
+    <string name="stage7_label">All civil work completed</string>
+    <string name="stage8_label">Sanitary work completed</string>
+    <string name="stage9_label">Electrical work completed</string>
+    <string name="stage10_label">All Remaining Works &amp; Site Clearance</string>
+    <string name="connection_class">Your connection class is:</string>
+    <string name="test_connection">Test Connection</string>
+
+</resources>

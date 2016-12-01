@@ -1,0 +1,617 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white" >
+
+    <RelativeLayout
+        android:id="@+id/rlClose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="7dp" >
+
+        <ImageButton
+            android:id="@+id/ib_closeWindow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:background="@android:color/transparent"
+            android:src="@drawable/close_window" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlClose"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:paddingLeft="7dp"
+        android:paddingRight="7dp"
+        android:text="FINANCIAL INFO(ICZMP Project)"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#333333" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_title"
+        android:layout_marginBottom="13dp"
+        android:padding="7dp" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#7A8593" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="3" >
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#7A8593" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="center_horizontal"
+                android:text="Sl. No."
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#333333"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#7A8593" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:gravity="center_horizontal"
+                android:text="Description"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#333333"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#7A8593" />
+
+            <TextView
+                android:id="@+id/tvProjectCost"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="ICZMP Project"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#333333"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#7A8593" />
+        </TableRow>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#7A8593" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="3" >
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#7A8593" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.5"
+                android:gravity="center_horizontal"
+                android:text="1"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#333333" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#7A8593" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1.5"
+                android:gravity="center_horizontal"
+                android:text="Fund Received During the Year"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#333333" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#7A8593" />
+
+            <TextView
+                android:id="@+id/tv_fund_received_during_theyear"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="Rs 11.50 Crore "
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#333333" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#7A8593" />
+        </TableRow>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#7A8593" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="3" >
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#7A8593" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.5"
+                android:gravity="center_horizontal"
+                android:text="2"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#333333" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#7A8593" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1.5"
+                android:gravity="center_horizontal"
+                android:text="Cumulative Fund Received Up to Date"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#333333" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#7A8593" />
+
+            <TextView
+                android:id="@+id/tvCumulativeFund_received_uptoDate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="Rs 11.50 Crore "
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#333333" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#7A8593" />
+        </TableRow>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#7A8593" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="3" >
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#7A8593" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.5"
+                android:gravity="center_horizontal"
+                android:text="3"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#333333" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#7A8593" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1.5"
+                android:gravity="center_horizontal"
+                android:text="Expenditure up to Date"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#333333" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#7A8593" />
+
+            <TextView
+                android:id="@+id/tv_expenditure_uptoDate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="Rs 11.50 Crore "
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#333333" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#7A8593" />
+        </TableRow>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#7A8593" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="3" >
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#7A8593" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.5"
+                android:gravity="center_horizontal"
+                android:text="4"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#333333" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#7A8593" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1.5"
+                android:gravity="center_horizontal"
+                android:text="Fund Utilized Up to Date"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#333333" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#7A8593" />
+
+            <TextView
+                android:id="@+id/tv_fundutilized_uptoDate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="Rs 11.50 Crore "
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#333333" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#7A8593" />
+        </TableRow>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#7A8593" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="3" >
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#7A8593" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.5"
+                android:gravity="center_horizontal"
+                android:text="5"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#333333" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#7A8593" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1.5"
+                android:gravity="center_horizontal"
+                android:text="Reference to Allotment Order"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#333333" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#7A8593" />
+
+            <TextView
+                android:id="@+id/tv_referenceto_allotment_order"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="Rs 11.50 Crore "
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#333333" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#7A8593" />
+        </TableRow>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#7A8593" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="3" >
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#7A8593" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.5"
+                android:gravity="center_horizontal"
+                android:text="6"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#333333" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#7A8593" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1.5"
+                android:gravity="center_horizontal"
+                android:text="Cumulative Fund Released to PWD Division"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#333333" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#7A8593" />
+
+            <TextView
+                android:id="@+id/tv_cumulative_fund_releasedto_pwd"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="Rs 11.50 Crore "
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#333333" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#7A8593" />
+        </TableRow>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#7A8593" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="3" >
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#7A8593" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.5"
+                android:gravity="center_horizontal"
+                android:text="7"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#333333" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#7A8593" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1.5"
+                android:gravity="center_horizontal"
+                android:text="Cumulative Fund Available"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#333333" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#7A8593" />
+
+            <TextView
+                android:id="@+id/tv_cumulative_fund_available"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="Rs 11.50 Crore "
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#333333" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#7A8593" />
+        </TableRow>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#7A8593" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="3" >
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#7A8593" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.5"
+                android:gravity="center_horizontal"
+                android:text="8"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#333333" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#7A8593" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1.5"
+                android:gravity="center_horizontal"
+                android:text="Gross Expenditure Incurred Up to Date"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#333333" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#7A8593" />
+
+            <TextView
+                android:id="@+id/tv_gross_expenditure_incurred_uptoDate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="Rs 11.50 Crore "
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#333333" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#7A8593" />
+        </TableRow>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#7A8593" />
+    </TableLayout>
+
+</RelativeLayout>

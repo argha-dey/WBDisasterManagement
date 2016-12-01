@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="85dp"
+    android:layout_height="wrap_content"
+    android:background="#121D29"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="85dp"
+        android:layout_height="1dp"
+        android:background="@drawable/divider" />
+
+    <TextView
+        android:id="@+id/tv_reload"
+        android:layout_width="85dp"
+        android:layout_height="50dp"
+        android:background="#121D29"
+        android:gravity="center"
+        android:minWidth="75dp"
+        android:paddingTop="7dp"
+        android:text="Reload"
+        android:textAppearance="?android:attr/textAppearance"
+        android:textColor="@color/option_text_selector" />
+
+    <View
+        android:layout_width="85dp"
+        android:layout_height="1dp"
+        android:background="@drawable/divider" />
+
+    <TextView
+        android:id="@+id/tv_sync"
+        android:layout_width="85dp"
+        android:layout_height="50dp"
+        android:background="#121D29"
+        android:gravity="center"
+        android:minWidth="75dp"
+        android:paddingBottom="7dp"
+        android:paddingTop="7dp"
+        android:text="Sync"
+        android:textAppearance="?android:attr/textAppearance"
+        android:textColor="@color/option_text_selector"
+        android:visibility="visible" />
+
+    <View
+        android:layout_width="85dp"
+        android:layout_height="1dp"
+        android:background="@drawable/divider" />
+
+    <TextView
+        android:id="@+id/tv_logout"
+        android:layout_width="85dp"
+        android:layout_height="50dp"
+        android:background="#121D29"
+        android:gravity="center"
+        android:minWidth="75dp"
+        android:paddingTop="7dp"
+        android:text="Logout"
+        android:textAppearance="?android:attr/textAppearance"
+        android:textColor="@color/option_text_selector" />
+
+</LinearLayout>
